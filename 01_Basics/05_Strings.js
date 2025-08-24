@@ -9,7 +9,7 @@ console.log(`Hello my name is ${name} and my age is ${age}`);
  const gameName = new String('harsh-hc-com')
  //output comes with index but it is not array
 
- console.log(gameName[0]);
+ console.log(gameName[2]);
  console.log(gameName.__proto__);
 
  
@@ -37,3 +37,21 @@ console.log(url.includes('mama'));
 
 console.log(gameName.split('-'));
 
+
+const str = "The quick brown fox jumps over the lazy dog.";
+
+const words = str.split(" ");
+console.log(words);
+
+console.log(words[3]);
+// Expected output: "fox"
+
+const chars = str.split("");
+console.log(chars);
+
+console.log(chars[8]);
+// Expected output: "k"
+
+const strCopy = str.split();
+console.log(strCopy);
+// Expected output: Array ["The quick brown fox jumps over the lazy dog."]
