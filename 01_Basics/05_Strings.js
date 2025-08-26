@@ -52,6 +52,6 @@ console.log(chars);
 console.log(chars[8]);
 // Expected output: "k"
 
-const strCopy = str.split();
+const strCopy = str.split("fox");
 console.log(strCopy);
 // Expected output: Array ["The quick brown fox jumps over the lazy dog."]
