@@ -43,3 +43,4 @@ const myObject = {
 //         console.log(key , '=>' ,value);
 // }
 //Object not iterable in forof loop
+//Iterates array and string
