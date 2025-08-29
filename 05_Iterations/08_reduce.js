@@ -5,7 +5,7 @@ const myNums = [1 , 2 , 3]
 //         return acc + currvalue
 // }, 0 )
 
-
+// Accumulator & Current value
 const myTotal = myNums.reduce( (acc , currvalue) => (acc + currvalue), 0 )
 
 // console.log(myTotal);
