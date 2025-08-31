@@ -18,14 +18,16 @@
         console.log(str, Date.now());
     }
 
+    let intervelId;
+
 document.querySelector('#start').addEventListener('click', function(){
     console.log("Started");
-    const intervelId = setInterval(sayDate, 1000 , "Hahahaha")
+    intervelId = setInterval(sayDate, 1000 , "Hahahaha")   
+})
 
-    document.querySelector('#stop').addEventListener('click', function(){
+ document.querySelector('#stop').addEventListener('click', function(){
     console.log("Stopped");
     clearInterval(intervelId)
-})
 })
 
 
