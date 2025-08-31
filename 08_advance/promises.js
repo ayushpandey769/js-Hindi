@@ -5,6 +5,10 @@ pending: initial state, neither fulfilled nor rejected.
 fulfilled: meaning that the operation was completed successfully.
 rejected: meaning that the operation failed.*/
 
+/*A fetch() promise only rejects when the request fails, for example, because of a badly-formed request URL or a network error.
+ A fetch() promise does not reject if the server responds with HTTP status codes that indicate errors (404, 504, etc.).
+ Instead, a then() handler must check the Response.ok and/or Response.status properties. */
+
 const promiseOne = new Promise( (resolve , reject) => {
     //do an async task
     // DB calls, cryptography, network
