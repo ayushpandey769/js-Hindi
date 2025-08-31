@@ -30,20 +30,34 @@
     // }, false)
 
 
-    document.getElementById('images').addEventListener('click', function(e){
-        console.log("Clicked inside the ul");
-    }, false)//bubbling == inside to outside(owl to image) and capturing = outside to inside(image to owl)
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("Clicked inside the ul");
+    // }, false)//bubbling == inside to outside(owl to image) and capturing = outside to inside(image to owl)
 
 
-    document.getElementById('owl').addEventListener('click', function(e){
-        console.log("Owl clicked");
-        e.stopPropagation()
-    }, false)
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("Owl clicked");
+    //     e.stopPropagation()
+    // }, false)
     
 
     document.getElementById('google').addEventListener('click', function(e){
+        // console.log("Google clicked");
+        e.stopPropagation()
         e.preventDefault()
     })
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+            
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+            // removeIt.parentNode.removeChild(removeIt) 
+        }
+        
+    }, false)
 </script>
 </html>
 
